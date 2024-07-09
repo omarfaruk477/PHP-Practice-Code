@@ -13,6 +13,7 @@ for ($i=1; $i<=100; $i = $i + 3){
 }
  
 echo "<br><br><br>";
+
 // Loop continue
 for ($j=5; $j<=100; $j = $j + 5){
 
@@ -23,5 +24,21 @@ for ($j=5; $j<=100; $j = $j + 5){
     echo "$j <br>"; // Ekhane echo print korle loop contineu kaj kokre
 }
 // Ekhane 50 te break howar kotha kintu hosse, kew ki bolte parben eta thik ase naki..
+
+echo "<br><br><br>";
+
+for ($i=1; $i<=20; $i++){
+
+    
+    if($i%3==0 && $i%5==0){
+        break;
+    }else{
+        echo "$i <br>"; 
+    }
+
+}
+
+
+
 
 ?>
