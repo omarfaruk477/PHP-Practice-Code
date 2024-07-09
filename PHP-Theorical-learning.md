@@ -33,6 +33,7 @@ There are 8 main data types in PHP:: 1. String 2. Integer 3. Float / Double 4. B
 9. Callable (কলযোগ্য): Represents a variable that can be called like a function. => একটি ভেরিয়েবলের প্রতিনিধিত্ব করে যেটিকে একটি ফাংশনের মতো বলা যেতে পারে।
 
 <br>
+
 ## Statement:
 
 In programming languages, a "statement" is a single line of code that performs an action. It could be a declaration, an assignment, a function call, a loop, or a conditional statement. For example: => প্রোগ্রামিং ভাষায়, একটি "বিবৃতি" হল কোডের একক লাইন যা একটি ক্রিয়া সম্পাদন করে। এটি একটি ঘোষণা, একটি অ্যাসাইনমেন্ট, একটি ফাংশন কল, একটি লুপ, বা একটি শর্তাধীন বিবৃতি হতে পারে।
