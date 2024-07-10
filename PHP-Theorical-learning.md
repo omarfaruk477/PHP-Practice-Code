@@ -38,6 +38,8 @@ There are 8 main data types in PHP:: 1. String 2. Integer 3. Float / Double 4. B
 
 In programming languages, a "statement" is a single line of code that performs an action. It could be a declaration, an assignment, a function call, a loop, or a conditional statement. For example: => প্রোগ্রামিং ভাষায়, একটি "বিবৃতি" হল কোডের একক লাইন যা একটি ক্রিয়া সম্পাদন করে। এটি একটি ঘোষণা, একটি অ্যাসাইনমেন্ট, একটি ফাংশন কল, একটি লুপ, বা একটি শর্তাধীন বিবৃতি হতে পারে।
 
+<br>
+
 ## Variable Value
 
 1. Undefine: Where something does not have a defined or specific value or meaning. => যেখানে কোনো কিছুর কোনো সংজ্ঞায়িত বা নির্দিষ্ট মান বা অর্থ নেই।
