@@ -33,10 +33,10 @@ function dev(){
 
 echo "<br><br>";
 
-// Function 5 with return
-function dev(){
-    return "Hello Omar Faruk";
+// Function 5 with type hinting
+function devsInfo(string $name, int $age, float $number){
+    return "Hello, I am {$name}. I am {$age} years old. I am {$number} feet.";
 }
-    echo dev();
+    echo devsInfo("Omar Faruk", 32, 5);
 
 ?>
