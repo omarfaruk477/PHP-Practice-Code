@@ -40,6 +40,44 @@ function creatTitle(string $title, $tag = "h1", string $align = "center", string
 }
 
 
+/**
+ * @param $timestamp
+ */
+function timeAgo($timestamp){
+
+ //find timestamp to time
+ $timestampNum = strtotime($timestamp);
+
+ // Current time
+ $currentTime = time();
+
+ // Time Different
+ $timeDiff = $currentTime - $timestampNum;
+
+ // get times unit
+ $sec = $timeDiff;
+ $min = round($timeDiff / 60);
+ $hour = round($timeDiff / (60 * 60));
+ $day = round($hour / 24);
+ $week = round($day / 7);
+ $month = round($day / 30);
+ $year = round($month / 12);
+
+if ($sec < 10){
+    echo "Just now";
+}elseif($sec >= 10 && $sec <= 30){
+    echo "A few second ago";
+}elseif($sec > 10 && $sec < 60){
+    echo "{$sec} second ago";
+}elseif($sec >= 60 && $min < 60){
+    echo "{$min} minuts ago";
+}else{
+    echo "{$hour} hours ago";
+}
+
+
+}
+
 
 
 ?>
