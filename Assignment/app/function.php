@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * Creat OTP
  * @param $password generator
  */
 function creatOtp(){
@@ -27,6 +28,7 @@ function creatOtp(){
 
 
 /**
+ * Elementor_Title
  * @param $elementor_header
  * @param $title
  * @param $tag
@@ -41,6 +43,7 @@ function creatTitle(string $title, $tag = "h1", string $align = "center", string
 
 
 /**
+ * TimeAgo
  * @param $timestamp
  */
 function timeAgo($timestamp){
