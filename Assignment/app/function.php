@@ -59,7 +59,7 @@ function timeAgo($timestamp){
  $min = round($timeDiff / 60);
  $hour = round($timeDiff / (60 * 60));
  $day = round($hour / 24);
- $week = round($day / 7);
+ $weeks = round($day / 7);
  $month = round($day / 30);
  $year = round($month / 12);
 
@@ -68,13 +68,30 @@ if ($sec < 10){
 }elseif($sec >= 10 && $sec <= 30){
     echo "A few second ago";
 }elseif($sec > 10 && $sec < 60){
-    echo "{$sec} second ago";
+    echo "{$sec} seconds ago";
 }elseif($sec >= 60 && $min < 60){
-    echo "{$min} minuts ago";
+    if($min > 1){
+        echo "{$min} minuts ago";
+    }else{
+        echo "{$min} minut ago";
+    }
+}elseif($min >= 60 && $hour <= 24){
+    if($hour > 1){
+        echo "{$hour} hours ago";
+    }else{
+        echo "{$hour} hour ago";
+    }
+}elseif($hour >= 24 & $day < 7){
+    echo "{$day} days ago";
+}elseif($day >= 7 && $weeks <= 4){
+    echo "{$weeks} weeks ago";
+}elseif($weeks > 4 && $month < 12){
+    echo "{$month} month ago";
+}elseif($month >= 12){
+    echo "{$year} year ago";
 }else{
-    echo "{$hour} hours ago";
+    echo "invalid time";
 }
-
 
 }
 
